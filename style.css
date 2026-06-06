@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&family=Fondamento&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    height:100%;
+}
+
+body{
+    font-family:'Fondamento', cursive;
+    color:white;
+}
+
+.page{
+    min-height:100vh;
+    position:relative;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.35);
+}
+
+.content{
+    position:relative;
+    z-index:2;
+}
+
+nav{
+    padding-top:35px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 30px;
+    font-size:1.3rem;
+}
+
+nav a:hover{
+    opacity:.7;
+}
+
+.hero-title{
+    font-family:'EB Garamond', serif;
+    font-size:8rem;
+    line-height:.9;
+    font-weight:400;
+}
+
+.hero-subtitle {
+    font-family: 'Fondamento', cursive;
+    font-size: 1.8rem;
+    margin-top: 10px;
+    color: white;
+    opacity: 0.9;
+}
+
+.page-title{
+    font-family:'EB Garamond', serif;
+    font-size:7rem;
+    font-weight:400;
+    text-align:center;
+    margin-top:120px;
+    margin-bottom:80px;
+}
+
+.homepage{
+    background-image:url("images/ruins.jpg");
+}
+
+.publications-page {
+    background-image: url("images/publications-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.about-page{
+    background-image:url("images/about-bg.jpg");
+    position: relative;
+}
+.about-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+
+    /* film grain texture */
+    background-image: url("https://www.transparenttextures.com/patterns/noise.png");
+    opacity: 0.12;
+    mix-blend-mode: overlay;
+}
+.home-hero {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+.footer-panel{
+    background:black;
+    min-height:30vh;
+    display:flex;
+    justify-content:flex-start;
+    gap:120px;
+    padding:70px;
+}
+
+.footer-column h3{
+    font-size:.8rem;
+    margin-bottom:20px;
+    letter-spacing:2px;
+}
+
+.footer-column a{
+    display:block;
+    color:white;
+    margin-bottom:10px;
+}
+
+.copyright{
+    margin-top:40px;
+    font-size:.9rem;
+}
+
+.publications-container{
+    max-width:1100px;
+    margin:auto;
+    padding:0 60px 100px;
+}
+
+
+.publication a{
+    color:white;
+    text-decoration:none;
+}
+
+.publication a:hover{
+    text-decoration:underline;
+}
+
+.about-container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 60px 100px;
+}
+
+.about-text {
+    margin-top:80px;
+    font-size:1.3rem;
+    line-height:1.7;
+}
+
+.contact {
+    margin-top: 60px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.contact-label {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.contact a:hover {
+    opacity: 0.7;
+}
+.section-title {
+    font-family: 'EB Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin: 60px 0 20px;
+    letter-spacing: 1px;
+}
+
+.publication-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.publication {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 6px;
+    transition: opacity 0.2s ease;
+}
+
+.publication:hover {
+    opacity: 0.7;
+}
+@media (max-width:900px){
+
+    .hero-title{
+        font-size:4rem;
+    }
+
+    .page-title{
+        font-size:4rem;
+    }
+
+    .about-text{
+        font-size:1.3rem;
+    }
+
+    .publication{
+        font-size:1.2rem;
+    }
+
+    nav a{
+        margin:0 10px;
+    }
+
+    .footer-panel{
+        flex-direction:column;
+        gap:40px;
+    }
+}
+.page {
+    min-height: 100vh;
+    position: relative;
+}
+.profile-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.profile-image img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 0;
+}
