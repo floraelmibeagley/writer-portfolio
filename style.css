@@ -258,3 +258,16 @@ nav a:hover{
     object-fit: cover;
     border-radius: 0;
 }
+.bottom-image-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.bottom-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+}
